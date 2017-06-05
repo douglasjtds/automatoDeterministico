@@ -1,9 +1,3 @@
-# automatoDeterministico
-
-Descrição do trabalho
-
-
-
 # Índice
 
 1. [Ambiente de desenvolvimento](#ambiente-de-desenvolvimento)
@@ -25,21 +19,19 @@ Descrição do trabalho
 
 ***
 # <a id="instrucoes">Instruções: </a>
-	- Você deverá implementar um AFD para o reconhecimento de constantes reais com
-exponenciação. O algoritmo é apresentado abaixo e o AFD a ser implementado é
-apresentado na Figura 1.
+ - Você deverá implementar um AFD para o reconhecimento de constantes reais com exponenciação...
 
 
 Obs.: Leia o restante das instruções no .pdf
 
 ***
 # <a id="Arquitetura-do-projeto">Arquitetura do projeto</a>
-  
+  (...)
 ***
 
-# <a id="erros">Prevenção de erros **(LEIA ESSA PARTE)**</a>
-	- Cuidado ao alterar o nome de um arquivo ou o seu caminho.
-	- 
+# <a id="erros">Prevenção de erros</a>
+ - Cuidado ao alterar o nome de um arquivo ou o seu caminho.
+ - 
 ***
 
 # <a id="OFF-TOPIC">OFF-TOPIC</a>
