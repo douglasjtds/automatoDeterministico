@@ -14,7 +14,7 @@
   - 
 
 # <a id="descricao-trabalho">Descrição do trabalho: </a>
-  - Será programado um Autômato Finito Dererminístico por Douglas Tertuliano e Matheus Pires para um trabalho da faculdade de Ciência da Computação.
+  - Será programado um Autômato Finito Determinístico por Douglas Tertuliano e Matheus Pires para um trabalho da faculdade de Ciência da Computação.
   - Matéria: Teoria da Computação
 
 ***
