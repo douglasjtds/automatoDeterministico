@@ -11,7 +11,8 @@
 # <a id="ambiente-de-desenvolvimento">Ambiente de desenvolvimento</a>
 
   - Windows será utilizado como SO.
-  - 
+  - A linguagem utlizada será o Java.
+  - A IDE para o desenvolvimento será o Netbeans.
 
 # <a id="descricao-trabalho">Descrição do trabalho: </a>
   - Será programado um Autômato Finito Determinístico por Douglas Tertuliano e Matheus Pires para um trabalho da faculdade de Ciência da Computação.
