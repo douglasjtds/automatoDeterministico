@@ -28,7 +28,7 @@ public class mainScreen extends javax.swing.JFrame {
         jButton_tryIt = new javax.swing.JButton();
         jButton_Cancel = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Teste uma palavra para o autômato");
 
         jLabel_tryWord.setText("Digite a palavra a ser testada:");
@@ -96,6 +96,7 @@ public class mainScreen extends javax.swing.JFrame {
     private void jButton_tryItActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_tryItActionPerformed
         // TODO add your handling code here:
         String word = jTextField_putWord.getText();
+        jTextField_putWord.setText("");
         sourceCode sourceCode = new sourceCode();
         sourceCode.code(word);
     }//GEN-LAST:event_jButton_tryItActionPerformed
