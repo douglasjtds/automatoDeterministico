@@ -10,11 +10,10 @@ public class sourceCode {
     
     public void code(String aut){
         //TODO COLOCAR O BACKEND AQUI:
- //       if(){
-            JOptionPane.showMessageDialog(null, "Sim!");
-   
-  //      } else{
-            
-  //      }
+        if(true != aut.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Sim! ");
+        } else{
+            JOptionPane.showMessageDialog(null, "Não! ");
+        }
     }
 }
