@@ -97,7 +97,7 @@ public class mainScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
         String word = jTextField_putWord.getText();
         jTextField_putWord.setText("");
-        sourceCode sourceCode = new sourceCode();
+        sourceCode sourceCode = new sourceCode(word);
         sourceCode.calcCode(word);
     }//GEN-LAST:event_jButton_tryItActionPerformed
 
