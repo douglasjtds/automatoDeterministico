@@ -3,7 +3,7 @@ import backEnd.sourceCode;
 
 /**
  *
- * @author douglasjtds
+ * @author douglasjtds & yMetsBless
  */
 public class mainScreen extends javax.swing.JFrame {
 
