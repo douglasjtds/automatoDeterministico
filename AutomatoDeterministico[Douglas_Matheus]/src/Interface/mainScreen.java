@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Interface;
+import backEnd.sourceCode;
 
 /**
  *
@@ -38,6 +34,11 @@ public class mainScreen extends javax.swing.JFrame {
         jLabel_tryWord.setText("Digite a palavra a ser testada:");
 
         jButton_tryIt.setText("Testar palavra");
+        jButton_tryIt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_tryItActionPerformed(evt);
+            }
+        });
 
         jButton_Cancel.setText("Cancelar");
         jButton_Cancel.addActionListener(new java.awt.event.ActionListener() {
@@ -85,6 +86,12 @@ public class mainScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton_CancelActionPerformed
+
+    private void jButton_tryItActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_tryItActionPerformed
+        // TODO add your handling code here:
+        sourceCode sourceCode = new sourceCode();
+        sourceCode.teste();
+    }//GEN-LAST:event_jButton_tryItActionPerformed
 
     /**
      * @param args the command line arguments
