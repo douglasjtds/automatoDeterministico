@@ -33,6 +33,12 @@ public class mainScreen extends javax.swing.JFrame {
 
         jLabel_tryWord.setText("Digite a palavra a ser testada:");
 
+        jTextField_putWord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_putWordActionPerformed(evt);
+            }
+        });
+
         jButton_tryIt.setText("Testar palavra");
         jButton_tryIt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,9 +95,14 @@ public class mainScreen extends javax.swing.JFrame {
 
     private void jButton_tryItActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_tryItActionPerformed
         // TODO add your handling code here:
+        String word = jTextField_putWord.getText();
         sourceCode sourceCode = new sourceCode();
-        sourceCode.teste();
+        sourceCode.code(word);
     }//GEN-LAST:event_jButton_tryItActionPerformed
+
+    private void jTextField_putWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_putWordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_putWordActionPerformed
 
     /**
      * @param args the command line arguments

@@ -7,10 +7,14 @@ import javax.swing.JOptionPane;
  * @author douglasjtds & yMetsBless
  */
 public class sourceCode {
-
-
-    public void teste(){
+    
+    public void code(String aut){
         //TODO COLOCAR O BACKEND AQUI:
-        JOptionPane.showMessageDialog(null, "Deu certo! ");
-   }
+ //       if(){
+            JOptionPane.showMessageDialog(null, "Sim!");
+   
+  //      } else{
+            
+  //      }
+    }
 }
