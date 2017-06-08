@@ -1,5 +1,6 @@
 package Interface;
 import backEnd.sourceCode;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -99,6 +100,7 @@ public class mainScreen extends javax.swing.JFrame {
         jTextField_putWord.setText("");
         sourceCode sourceCode = new sourceCode(word);
         sourceCode.calcCode(word);
+ 
     }//GEN-LAST:event_jButton_tryItActionPerformed
 
     private void jTextField_putWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_putWordActionPerformed
