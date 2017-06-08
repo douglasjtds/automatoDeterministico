@@ -89,11 +89,13 @@ public class mainScreen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    //botão "cancelar":
     private void jButton_CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CancelActionPerformed
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton_CancelActionPerformed
 
+    //botão "testar palavra":
     private void jButton_tryItActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_tryItActionPerformed
         // TODO add your handling code here:
         String word = jTextField_putWord.getText();
@@ -103,6 +105,7 @@ public class mainScreen extends javax.swing.JFrame {
  
     }//GEN-LAST:event_jButton_tryItActionPerformed
 
+    //textfield para o usuário digitar a palavra:
     private void jTextField_putWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_putWordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_putWordActionPerformed
