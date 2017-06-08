@@ -10,16 +10,12 @@ public class sourceCode {
     String word;
     int currentState; //variavel para guardar o estado em que o algoritmo se encontra
     char[] Alphabet = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', '+', '-', '.'};
+    char[] PlusLess = {'+', '-'};
+    char Dot = '.';
 
     public sourceCode(String Word) {
         this.word = Word;
     }
-
-    public char[] getAlphabet() {
-        return Alphabet;
-    }
-    
-    
 
     private boolean inAlphabet(String Word){
         int count = 0;
@@ -30,7 +26,9 @@ public class sourceCode {
                 }
             }
             if (count == Alphabet.length){
-                    return false;
+                    return false;     
+            } else{
+                count = 0;
             }
         }
         return true;
