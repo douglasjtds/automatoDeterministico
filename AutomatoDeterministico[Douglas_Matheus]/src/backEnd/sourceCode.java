@@ -18,6 +18,9 @@ public class sourceCode {
     }
 
     private boolean inAlphabet(String Word){
+        if(Word.isEmpty())
+            return false;
+        
         int count = 0;
         for(int i=0; i<Word.length(); i++){
             for(int j=0; j<Alphabet.length; j++){
@@ -34,7 +37,7 @@ public class sourceCode {
         return true;
     }
     
- /*   public void finalState(Character Word){
+/*   public void isfinalState(Character Word){
         if(Character.isDigit(Word) && ) {
             
         }
@@ -54,7 +57,72 @@ public class sourceCode {
         verify = inAlphabet(word);
         //verificação que o matheus fez
         if(verify == true){
-            JOptionPane.showMessageDialog(null, "Sim! ");
+       
+            if (inAlphabet(word)) { //pra conferir se a palavra tá no alfabeto para entrar no switch
+                JOptionPane.showMessageDialog(null, "Sim! ");
+/*                switch (currentState)  { 
+                        case 0: { //caso esteja no estado 0
+                                if () { //veio + ou -
+                                        currentState = 1;
+                                } else if () { //veio .
+                                        currentState = 2;
+                                } else if () { //veio algum dígito isDigit
+                                        currentState = 3; //que é um estado final 
+                                }
+                        }
+                        case 1: { //caso esteja no estado 1
+                                if () { //veio .
+                                        currentState = 2;
+                                } else if () { //veio algum dígito
+                                        currentState = 3;
+                                } 
+                        }
+                        case 2: { //caso esteja no estado 2
+                                if () { //vier algum digito
+                                        currentState = 5;
+                                }
+                        }
+                        case 3: { //caso esteja no estado 3 (que é final)
+                                if () { //vier algum dígito
+                                        currentState = 3;
+                                } else if () { //vier .
+                                        currentState = 4;
+                                } else if () { //vier a letra E
+                                        currentState = 6;
+                                }
+                        }
+                        case 4: { //caso esteja no estado 4
+                                if () { //vier algum digito
+                                        currentState = 5;
+                                }
+                        }
+                        case 5: { //caso esteja no estado 5 (que é final)
+                                if () { //vier algum dígito
+                                        currentState = 5;
+                                } else if () { //vier a letra E
+                                        currentState = 6;
+                                }
+                        }
+                        case 6: { //caso esteja no estado 6
+                                if () { //vier + ou -
+                                        currentState = 8;				
+                                } else if () { //vier algum dígito
+                                        currentState = 9;
+                                }
+                        }
+                        case 8: { //caso esteja no estado 8 (não tem estado 7 no AFD)
+                                if () { //vier algum dígito
+                                        currentState = 9;
+                                }
+                        }
+                        case 9: { //caso esteja no estado 9 (que é final)
+                                if () { //vier algum dígito
+                                        currentState = 9;
+                                }
+                        }
+                    }*/	
+            }
+        
         } else{
             JOptionPane.showMessageDialog(null, "Não! ");
         }
