@@ -1,6 +1,6 @@
 package backEnd;
 
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
+//import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import javax.swing.*;
 /**
  *
@@ -88,95 +88,124 @@ public class sourceCode {
         verify = inAlphabet(word);
         if(verify == true){
             while(currentPosition != wordLenght){
-                    JOptionPane.showMessageDialog(null, "Sim!  -  Palavra válida.");
                     switch (currentState)  { 
                             case 0: { //caso esteja no estado 0
                                     if (isPlusOrLess(word, currentPosition)) { //veio + ou -
                                             currentState = 1;
+                                            currentPosition++;
                                     } else if (isPoint(word, currentPosition)) { //veio .
                                             currentState = 2;
+                                            currentPosition++;
                                     } else if (isDigit(word, currentPosition)) { //veio algum dígito isDigit
                                             currentState = 3; //que é um estado final 
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
-
+                                    break;
                             }
                             case 1: { //caso esteja no estado 1
                                     if (isPoint(word, currentPosition)) { //veio .
                                             currentState = 2;
+                                            currentPosition++;
                                     } else if (isDigit(word, currentPosition)) { //veio algum dígito
                                             currentState = 3;
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
+                                break;   
                             }
                             case 2: { //caso esteja no estado 2
                                     if (isDigit(word, currentPosition)) { //vier algum digito
                                             currentState = 5;
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
+                                break;
                             }
                             case 3: { //caso esteja no estado 3 (que é final)
                                     if (isDigit(word, currentPosition)) { //vier algum dígito
                                             currentState = 3;
+                                            currentPosition++;
                                     } else if (isPoint(word, currentPosition)) { //vier .
                                             currentState = 4;
+                                            currentPosition++;
                                     } else if (isE(word, currentPosition)) { //vier a letra E
                                             currentState = 6;
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
+                                break;
                             }
                             case 4: { //caso esteja no estado 4
                                     if (isDigit(word, currentPosition)) { //vier algum digito
                                             currentState = 5;
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
+                                break;
                             }
                             case 5: { //caso esteja no estado 5 (que é final)
                                     if (isDigit(word, currentPosition)) { //vier algum dígito
                                             currentState = 5;
+                                            currentPosition++;
                                     } else if (isE(word, currentPosition)) { //vier a letra E
                                             currentState = 6;
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
+                                break;
                             }
                             case 6: { //caso esteja no estado 6
                                     if (isPlusOrLess(word, currentPosition)) { //vier + ou -
-                                            currentState = 8;				
+                                            currentState = 8;
+                                            currentPosition++;
                                     } else if (isDigit(word, currentPosition)) { //vier algum dígito
                                             currentState = 9;
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
+                                break;
                             }
                             case 8: { //caso esteja no estado 8 (não tem estado 7 no AFD)
                                     if (isDigit(word, currentPosition)) { //vier algum dígito
                                             currentState = 9;
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
+                                break;
                             }
                             case 9: { //caso esteja no estado 9 (que é final)
                                     if (isDigit(word, currentPosition)) { //vier algum dígito
                                             currentState = 9;
+                                            currentPosition++;
                                     } else {
                                         currentState = 10;
                                     }
+                                break;
                             }
                             default: {
                                 currentState = 10; //estado de erro
-                                JOptionPane.showMessageDialog(null, "O Autômato entrou "
-                                        + "num estado inexistente.   ---- ERROR");
+                                JOptionPane.showMessageDialog(null, "Não!  -  Palavra invalida. ");
+                                System.exit(0);
+                                /*JOptionPane.showMessageDialog(null, "O Autômato entrou "
+                                        + "num estado inexistente.   ---- ERROR");*/
                             }
                         }
             }
+            
+                if(wordLenght == currentPosition)
+                    JOptionPane.showMessageDialog(null, "Sim!  -  Palavra válida.");
+            
         } else{
             JOptionPane.showMessageDialog(null, "Não!  -  Palavra invalida. ");
         }
         }
-    }  //ERRO NESSA CHAVE CONSERTAR!!! (Douglas diz: que erro?! hahaha)
+    }  //ERRO NESSA CHAVE CONSERTAR!!! (Douglas diz: que erro?! hahaha) SEI LA MANO, TAVA DANDO! ISUHCASCUISACHAS

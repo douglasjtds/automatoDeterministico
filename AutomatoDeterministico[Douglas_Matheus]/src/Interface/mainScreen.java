@@ -29,7 +29,7 @@ public class mainScreen extends javax.swing.JFrame {
         jButton_tryIt = new javax.swing.JButton();
         jButton_Cancel = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Teste uma palavra para o autômato");
 
         jLabel_tryWord.setText("Digite a palavra a ser testada:");
