@@ -1,7 +1,6 @@
 package backEnd;
-
-//import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import javax.swing.*;
+
 /**
  *
  * @author douglasjtds & yMetsBless
@@ -11,7 +10,6 @@ public class sourceCode {
     String word;
     int currentState; //variavel para guardar o estado em que o algoritmo se encontra
     char[] alphabet = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', '+', '-', '.'};
-//    char[] plusLess = {'+', '-'};
     char dot = '.';
 
     public sourceCode(String word) {
@@ -76,17 +74,12 @@ public class sourceCode {
     
     
     public void calcCode(String word){ //método para calcular a palavra
-        //TODO COLOCAR O BACKEND AQUI:
-        //estado inicial + - o número
-        boolean verify = true;
-        int allowedState[] = {1,2,3,4,5,6,8,9}; //estados existentes no automato
+        boolean verify = true;  //Variavel que irá verificar se a palavra bate com o alfabeto
         int wordLenght = word.length();
         int currentPosition = 0;
         currentState = 0; //define q0 como estado inicial
-        //Word = jTextField_putWord.getText(); //tá dando erro, tem que ver como
-        //que pega o texto que tá em outro pacote
                
-        verify = inAlphabet(word);
+        verify = inAlphabet(word);  //Verifica se a palavra pertence ao alfabeto
         if(verify == true){
             while(currentPosition != wordLenght){
                     switch (currentState)  { 
