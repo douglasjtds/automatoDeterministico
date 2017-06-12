@@ -38,11 +38,12 @@ public class sourceCode {
         return true;
     }
     
- /*  public void isfinalState(String word, int pos){
-        if(word.charAt(pos)){
-            
-        }
-    } */
+    public boolean isfinalState(int currentState){
+        if(currentState == 3 || currentState == 5 || currentState == 9){
+            return true;   
+        } else
+            return false;
+    } 
     
     public boolean isPoint(String word, int pos){
         if(word.charAt(pos) == dot){
@@ -195,17 +196,17 @@ public class sourceCode {
                                 currentState = 10; //estado de erro
                                 JOptionPane.showMessageDialog(null, "Não!  -  Palavra invalida. ");
                                 System.exit(0);
-                                /*JOptionPane.showMessageDialog(null, "O Autômato entrou "
-                                        + "num estado inexistente.   ---- ERROR");*/
+                                JOptionPane.showMessageDialog(null, "O Autômato entrou "
+                                        + "num estado inexistente.   ---- ERROR");
                             }
                         }
             }
             
-                if(wordLenght == currentPosition)
+                if(wordLenght == currentPosition && isfinalState(currentState)){
                     JOptionPane.showMessageDialog(null, "Sim!  -  Palavra válida.");
-            
-        } else{
-            JOptionPane.showMessageDialog(null, "Não!  -  Palavra invalida. ");
+                } else
+                    JOptionPane.showMessageDialog(null, "Não!  -  Palavra invalida. ");
+            } else
+                JOptionPane.showMessageDialog(null, "Não!  -  Palavra invalida. ");
         }
-        }
-    }  //ERRO NESSA CHAVE CONSERTAR!!! (Douglas diz: que erro?! hahaha) SEI LA MANO, TAVA DANDO! ISUHCASCUISACHAS
+}
