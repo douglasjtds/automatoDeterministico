@@ -83,7 +83,7 @@ public class sourceCode {
         if(verify == true){
             while(currentPosition != wordLenght){
                     switch (currentState)  { 
-                            case 0: { //caso esteja no estado 0
+                            case 0: { //quando está no estado inicial
                                     if (isPlusOrLess(word, currentPosition)) { //veio + ou -
                                             currentState = 1;
                                             currentPosition++;
@@ -186,11 +186,10 @@ public class sourceCode {
                                 break;
                             }
                             default: {
-                                currentState = 10; //estado de erro
                                 JOptionPane.showMessageDialog(null, "Não!  -  Palavra invalida. ");
-                                System.exit(0);
                                 JOptionPane.showMessageDialog(null, "O Autômato entrou "
                                         + "num estado inexistente.   ---- ERROR");
+                                System.exit(0);
                             }
                         }
             }
