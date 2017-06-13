@@ -3,9 +3,8 @@
 1. [Ambiente de desenvolvimento](#ambiente-de-desenvolvimento)
 2. [Descrição do trabalho](#descricao-trabalho)
 3. [Instruções](#instrucoes)
-4. [Arquitetura do projeto](#Arquitetura-do-projeto)
-5. [Prevenção de erros](#erros)
-6. [OFF-Topic](#OFF-TOPIC)
+4. [Prevenção de erros](#erros)
+5. [OFF-Topic](#OFF-TOPIC)
 
 ***
 # <a id="ambiente-de-desenvolvimento">Ambiente de desenvolvimento</a>
@@ -26,13 +25,8 @@
 Obs.: Leia o restante das instruções no .pdf
 
 ***
-# <a id="Arquitetura-do-projeto">Arquitetura do projeto</a>
-  (...)
-***
-
 # <a id="erros">Prevenção de erros</a>
  - Cuidado ao alterar o nome de um arquivo ou o seu caminho.
- - 
 ***
 
 # <a id="OFF-TOPIC">OFF-TOPIC</a>
