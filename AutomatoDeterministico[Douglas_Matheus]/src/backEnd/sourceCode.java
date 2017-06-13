@@ -188,7 +188,8 @@ public class sourceCode {
                             default: {
                                 JOptionPane.showMessageDialog(null, "Não!  -  Palavra invalida. ");
                                 JOptionPane.showMessageDialog(null, "O Autômato entrou "
-                                        + "num estado inexistente.   ---- ERROR");
+                                        + "num estado inexistente.   ---- ERROR\n\n"
+                                        + "fechando aplicação..."); //deixa isso ou não?!
                                 System.exit(0);
                             }
                         }
